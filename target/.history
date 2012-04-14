@@ -1,0 +1,11 @@
+update
+container:start
+container:stop
+container:start
+container:stop
+gen-idea
+addSbtPlugin("play" % "sbt-plugin" % Option(System.getProperty("play.version")).getOrElse("2.0-RC2"))
+gen-idea sbt-classifiers
+gen-idea no-classifiers
+sbt-version
+make-pom
